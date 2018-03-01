@@ -1,6 +1,4 @@
 /*
-
-
 Given 6 Integers x1,y1,x2,y2,x3,y3 ,Find what Type of Triangle can be formed from (x1,y1)(x2,y2)(x3,y3)
 
 Input : 0,0,2,0,0,2
@@ -69,6 +67,7 @@ void findslope(int x1,int y1,int x2,int y2,int x3,int y3)
 
 void findtypetriangle(float slope_a,float slope_b,float slope_c)
 {
+
     float Theta_1,Theta_2,Theta_3;
     //finding whether the given triangle is obtuse or acute or rightangles triangle
     Theta_1=atan((slope_b-slope_a)/(1+(slope_b*slope_a)));
@@ -92,7 +91,8 @@ void findtypetriangle(float slope_a,float slope_b,float slope_c)
 
 }
 
-int main(){
+int main()
+{
 
     typeofTraingle(0,0,2,0,0,2); //Should print "Iscosceles"
 
