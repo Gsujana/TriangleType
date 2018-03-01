@@ -1,3 +1,4 @@
+//Triangle_type
 /*
 Given 6 Integers x1,y1,x2,y2,x3,y3 ,Find what Type of Triangle can be formed from (x1,y1)(x2,y2)(x3,y3)
 
