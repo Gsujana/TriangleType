@@ -16,8 +16,9 @@ Extra Task : Give the example of equilateral traingle, Just write the coordinate
  in the below line.
  (x1,y1),(x2,y2),(x3,y3) // Replace this three points with the example
 
-Optional : Do these with floats, instead of ints.
-*/
+Optional : Do these with floats, instead of ints.*/
+
+
 #include<stdio.h>
 #include<math.h>
 
@@ -89,6 +90,7 @@ void findtypetriangle(float slope_a,float slope_b,float slope_c)
             printf("AcuteS angles triangle");
 
 }
+
 int main(){
 
     typeofTraingle(0,0,2,0,0,2); //Should print "Iscosceles"
