@@ -24,15 +24,16 @@ Optional : Do these with floats, instead of ints.*/
 
 void typeofTraingle(int x1,int y1,int x2,int y2,int x3,int y3)
 {
+
     float side_a,side_b,side_c;
-    //finding the lengths of sides. let length between points (x1,y1) and (x2,y2) be 'a'
-    //                                                        (x2,y2) and (x3,y3) be 'b'
-    //                                                        (x3,y3) and (x1,y1) be 'c'
+    
+    /*finding the lengths of sides. let length between points (x1,y1) and (x2,y2) be 'a'
+                                                            (x2,y2) and (x3,y3) be 'b'
+                                                            (x3,y3) and (x1,y1) be 'c'*/
     side_a= sqrt( (( x2 - x1 ) * ( x2 - x1 )) + (( y2 - y1 ) * ( y2 - y1 )) );
     side_b= sqrt( (( x3 - x2 ) * ( x3 - x2 )) + (( y3 - y2 ) * ( y3 - y2 )) );
     side_c= sqrt( (( x1 - x3 ) * ( x1 - x3 )) + (( y1 - y3 ) * ( y1 - y3 )) );
-
-
+    
     if((( side_a + side_b ) < side_c ) || (( side_b + side_c ) < side_a ) || (( side_c + side_a ) < side_b))
         printf("Cannot form a triangle\n");
      else if( side_a == side_b )
